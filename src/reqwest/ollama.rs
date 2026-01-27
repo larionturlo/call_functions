@@ -1,7 +1,7 @@
-use std::error::Error;
-
 use serde::{Deserialize, Serialize};
 use serde_json::{self, Value};
+
+use crate::reqwest::BoxError;
 
 pub struct Client {
     host: String,
@@ -29,8 +29,6 @@ pub struct LlmResponseChunk {
     pub message: LlmMessage,
     pub done: bool,
 }
-
-type BoxError = Box<dyn Error + Send + Sync>;
 
 impl Client {
     pub fn new(host: &str) -> Self {

@@ -1,0 +1,31 @@
+{
+  "tools": [
+    {
+      "function": {
+        "description": "Get the current weather for a location",
+        "name": "get_current_weather",
+        "parameters": {
+          "properties": {
+            "location": {
+              "description": "The location to get the weather for, e.g. San Francisco, CA",
+              "type": "string"
+            }
+          },
+          "required": ["location"],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    }
+  ],
+  "tool_call": { "function": { "arguments": { "location": "Toronto" } }, "name": "get_current_weather" },
+  "prompts": [
+    "What is the weather like in Toronto?",
+    "Can you tell me the weather in Toronto?",
+    "What's the weather in Toronto like?",
+    "What's the weather like in Toronto?",
+    "weather in toronto?",
+    "weather in toronto",
+    "погода в Торонто"
+  ]
+}

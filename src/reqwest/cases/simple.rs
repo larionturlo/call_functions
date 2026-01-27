@@ -1,7 +1,11 @@
+use std::fs;
+
+use serde::{Deserialize, Serialize};
 use serde_json::Value;
 
-use crate::reqwest::cases::Case;
+use crate::reqwest::{BoxError, cases::Case};
 
+#[derive(Serialize, Deserialize)]
 pub struct Simple {
     tools: Vec<Value>,
     tool_call: Value,
@@ -14,6 +18,25 @@ impl Simple {
             tools,
             tool_call,
             prompts,
+        }
+    }
+
+    pub fn try_to_file(&self, file_path: &str) -> Result<(), BoxError> {
+        let json = serde_json::to_string(self)?;
+        fs::write(file_path, json)?;
+        Ok(())
+    }
+
+    pub fn try_from_file(file_path: &str) -> Result<Self, BoxError> {
+        let json = fs::read_to_string(file_path)?;
+        let result = serde_json::from_str(&json)?;
+        Ok(result)
+    }
+
+    pub fn from_file_or_default(file_path: &str) -> Self {
+        match Self::try_from_file(file_path) {
+            Ok(simple) => simple,
+            Err(_) => Self::default(),
         }
     }
 }
@@ -56,10 +79,10 @@ impl Default for Simple {
               }
             })],
             tool_call: serde_json::json!({
+                "name": "get_current_weather",
                 "function": {
-                    "name": "get_current_weather",
                     "arguments": {
-                        "arguments": ["Toronto"]
+                        "location": "Toronto"
                     }
                 }
             }),
@@ -71,7 +94,7 @@ impl Default for Simple {
                 "weather in toronto?".to_string(),
                 "weather in toronto".to_string(),
                 "погода в Торонто".to_string(),
-                "Какая погода в Москве".to_string(),
+                // "Какая погода в Москве".to_string(),
             ],
         }
     }
