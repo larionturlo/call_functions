@@ -3,7 +3,7 @@ use std::fs;
 use serde::{Deserialize, Serialize};
 use serde_json::Value;
 
-use crate::reqwest::{BoxError, cases::Case};
+use crate::{BoxError, cases::Case};
 
 #[derive(Serialize, Deserialize)]
 pub struct Simple {
@@ -34,10 +34,25 @@ impl Simple {
     }
 
     pub fn from_file_or_default(file_path: &str) -> Self {
-        match Self::try_from_file(file_path) {
-            Ok(simple) => simple,
-            Err(_) => Self::default(),
-        }
+        Self::try_from_file(file_path).unwrap_or_default()
+    }
+
+    pub async fn try_to_file_async(&self, file_path: &str) -> Result<(), BoxError> {
+        let json = serde_json::to_string(self)?;
+        tokio::fs::write(file_path, json).await?;
+        Ok(())
+    }
+
+    pub async fn try_from_file_async(file_path: &str) -> Result<Self, BoxError> {
+        let json = tokio::fs::read_to_string(file_path).await?;
+        let result = serde_json::from_str(&json)?;
+        Ok(result)
+    }
+
+    pub async fn from_file_or_default_async(file_path: &str) -> Self {
+        Self::try_from_file_async(file_path)
+            .await
+            .unwrap_or_default()
     }
 }
 

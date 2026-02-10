@@ -1,0 +1,10 @@
+[
+  {
+    "prompt": "submit this info: John Doe is a 30 year old doctor.",
+    "expected_data": {
+      "name": "John Doe",
+      "age": 30,
+      "profession": "doctor"
+    }
+  }
+]

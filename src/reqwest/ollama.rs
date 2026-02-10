@@ -1,7 +1,7 @@
 use serde::{Deserialize, Serialize};
 use serde_json::{self, Value};
 
-use crate::reqwest::BoxError;
+use crate::BoxError;
 
 pub struct Client {
     host: String,
@@ -69,7 +69,7 @@ impl Client {
         let vresp = resp
             .split("\n")
             .filter(|line| !line.is_empty())
-            .map(|chunk| serde_json::from_str(chunk))
+            .map(serde_json::from_str)
             .collect::<Result<Vec<LlmResponseChunk>, _>>()?;
         Ok(vresp)
     }

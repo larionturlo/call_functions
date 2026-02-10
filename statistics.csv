@@ -1,16 +1,16 @@
-``|`7`|``|`3001`
-`What is the weather like in Toronto?`|`[{"function":{"arguments":{"location":"Toronto"},"index":0,"name":"get_current_weather"},"id":"call_ypscx5qg"}]`|`true`|`8184`
-`Can you tell me the weather in Toronto?`|`[{"function":{"arguments":{"location":"Toronto"},"index":0,"name":"get_current_weather"},"id":"call_6ntmz78g"}]`|`true`|`2009`
-`What's the weather in Toronto like?`|`[{"function":{"arguments":{"location":"Toronto"},"index":0,"name":"get_current_weather"},"id":"call_lnbxqpz7"}]`|`true`|`2039`
-`What's the weather like in Toronto?`|`[{"function":{"arguments":{"location":"Toronto"},"index":0,"name":"get_current_weather"},"id":"call_wivsdeni"}]`|`true`|`1904`
-`weather in toronto?`|`[{"function":{"arguments":{"location":"Toronto"},"index":0,"name":"get_current_weather"},"id":"call_na0e4w88"}]`|`true`|`1895`
-`weather in toronto`|`[{"function":{"arguments":{"location":"Toronto"},"index":0,"name":"get_current_weather"},"id":"call_5xlevvp8"}]`|`true`|`2067`
-`погода в Торонто`|`[{"function":{"arguments":{"location":"Toronto"},"index":0,"name":"get_current_weather"},"id":"call_60mymo4w"}]`|`true`|`2911`
-``|`7`|``|`829`
-`What is the weather like in Toronto?`|`[{"function":{"arguments":{"location":"Toronto"},"index":0,"name":"get_current_weather"},"id":"call_m6rkt9tf"}]`|`true`|`1947`
-`Can you tell me the weather in Toronto?`|`[{"function":{"arguments":{"location":"Toronto"},"index":0,"name":"get_current_weather"},"id":"call_n10zzk6y"}]`|`true`|`625`
-`What's the weather in Toronto like?`|`[{"function":{"arguments":{"location":"Toronto"},"index":0,"name":"get_current_weather"},"id":"call_eqfxmckx"}]`|`true`|`655`
-`What's the weather like in Toronto?`|`[{"function":{"arguments":{"location":"Toronto"},"index":0,"name":"get_current_weather"},"id":"call_u43rsaq6"}]`|`true`|`622`
-`weather in toronto?`|`-`|`true`|`667`
-`weather in toronto`|`-`|`true`|`593`
-`погода в Торонто`|`[{"function":{"arguments":{"location":"Торонто, США"},"index":0,"name":"get_current_weather"},"id":"call_q19xrf55"}]`|`true`|`700`
+``|`7`|``|`3162`
+`What is the weather like in Toronto?`|`[{"function":{"arguments":{"location":"Toronto"},"index":0,"name":"get_current_weather"},"id":"call_a7pllwcg"}]`|`true`|`6740`
+`Can you tell me the weather in Toronto?`|`[{"function":{"arguments":{"location":"Toronto"},"index":0,"name":"get_current_weather"},"id":"call_l666l5fv"}]`|`true`|`2963`
+`What's the weather in Toronto like?`|`[{"function":{"arguments":{"location":"Toronto"},"index":0,"name":"get_current_weather"},"id":"call_vg4m7mq8"}]`|`true`|`2198`
+`What's the weather like in Toronto?`|`[{"function":{"arguments":{"location":"Toronto"},"index":0,"name":"get_current_weather"},"id":"call_xtqiwwfm"}]`|`true`|`2761`
+`weather in toronto?`|`[{"function":{"arguments":{"location":"Toronto"},"index":0,"name":"get_current_weather"},"id":"call_69o0degt"}]`|`true`|`2299`
+`weather in toronto`|`[{"function":{"arguments":{"location":"Toronto"},"index":0,"name":"get_current_weather"},"id":"call_g6fbea0z"}]`|`true`|`1845`
+`погода в Торонто`|`[{"function":{"arguments":{"location":"Toronto"},"index":0,"name":"get_current_weather"},"id":"call_i2k41fp1"}]`|`true`|`3333`
+``|`7`|``|`788`
+`What is the weather like in Toronto?`|`[{"function":{"arguments":{"location":"Toronto"},"index":0,"name":"get_current_weather"},"id":"call_cvn1fq2o"}]`|`true`|`718`
+`Can you tell me the weather in Toronto?`|`[{"function":{"arguments":{"location":"Toronto"},"index":0,"name":"get_current_weather"},"id":"call_txrrlhzc"}]`|`true`|`591`
+`What's the weather in Toronto like?`|`[{"function":{"arguments":{"location":"Toronto"},"index":0,"name":"get_current_weather"},"id":"call_4shxmt6t"}]`|`true`|`747`
+`What's the weather like in Toronto?`|`[{"function":{"arguments":{"location":"Toronto"},"index":0,"name":"get_current_weather"},"id":"call_glgdjpc3"}]`|`true`|`629`
+`weather in toronto?`|`-`|`true`|`1560`
+`weather in toronto`|`[{"function":{"arguments":{"location":"Toronto"},"index":0,"name":"get_current_weather"},"id":"call_v4b6ems6"}]`|`true`|`600`
+`погода в Торонто`|`[{"function":{"arguments":{"location":"Торонто, США"},"index":0,"name":"get_current_weather"},"id":"call_vxny9eix"}]`|`true`|`675`

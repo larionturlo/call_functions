@@ -6,4 +6,5 @@ pub struct Case {
     pub expected_tool_call: Value,
 }
 
+pub mod extract;
 pub mod simple;
