@@ -1,0 +1,139 @@
+[
+  {
+    "prompt": "Apple Inc. is a technology company founded in 1976 by Steve Jobs, Steve Wozniak, and Ronald Wayne. The company is headquartered at 1 Infinite Loop, Cupertino, California 95014, USA. Apple has over 165,000 employees worldwide and generated $394.3 billion in revenue in 2023. The current CEO is Tim Cook. Key employees include Jony Ive (former Chief Design Officer), Craig Federighi (Senior Vice President of Software Engineering), and Luca Maestri (Chief Financial Officer). The company operates in the consumer electronics, software, and online services industries.",
+    "expected_data": {
+      "name": "Apple Inc.",
+      "industry": "consumer electronics, software, and online services",
+      "founded_year": 1976,
+      "headquarters": {
+        "street": "1 Infinite Loop",
+        "city": "Cupertino",
+        "state": "California",
+        "zip_code": "95014",
+        "country": "USA"
+      },
+      "employees_count": 165000,
+      "ceo": "Tim Cook",
+      "revenue": 394300000000.0,
+      "employees": [
+        {
+          "name": "Tim Cook",
+          "position": "CEO",
+          "department": "Executive",
+          "salary": null,
+          "contact_info": {
+            "email": null,
+            "phone": null,
+            "linkedin": null
+          }
+        },
+        {
+          "name": "Jony Ive",
+          "position": "Former Chief Design Officer",
+          "department": "Design",
+          "salary": null,
+          "contact_info": {
+            "email": null,
+            "phone": null,
+            "linkedin": null
+          }
+        },
+        {
+          "name": "Craig Federighi",
+          "position": "Senior Vice President of Software Engineering",
+          "department": "Software Engineering",
+          "salary": null,
+          "contact_info": {
+            "email": null,
+            "phone": null,
+            "linkedin": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Google LLC, a subsidiary of Alphabet Inc., was founded in 1998 by Larry Page and Sergey Brin while they were PhD students at Stanford University. The company is headquartered in Mountain View, California, USA. Google employs over 182,000 people and had a revenue of $307.39 billion in 2023. Sundar Pichai serves as the CEO. Important departments include Search, YouTube, Cloud, and Ads. Notable executives are Ruth Porat (CFO) and Kent Walker (SVP of Global Affairs).",
+    "expected_data": {
+      "name": "Google LLC",
+      "industry": "Internet services and products",
+      "founded_year": 1998,
+      "headquarters": {
+        "street": null,
+        "city": "Mountain View",
+        "state": "California",
+        "zip_code": null,
+        "country": "USA"
+      },
+      "employees_count": 182000,
+      "ceo": "Sundar Pichai",
+      "revenue": 307390000000.0,
+      "employees": [
+        {
+          "name": "Sundar Pichai",
+          "position": "CEO",
+          "department": "Executive",
+          "salary": null,
+          "contact_info": {
+            "email": null,
+            "phone": null,
+            "linkedin": null
+          }
+        },
+        {
+          "name": "Ruth Porat",
+          "position": "CFO",
+          "department": "Finance",
+          "salary": null,
+          "contact_info": {
+            "email": null,
+            "phone": null,
+            "linkedin": null
+          }
+        },
+        {
+          "name": "Kent Walker",
+          "position": "SVP of Global Affairs",
+          "department": "Global Affairs",
+          "salary": null,
+          "contact_info": {
+            "email": null,
+            "phone": null,
+            "linkedin": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Tesla, Inc. is an electric vehicle and clean energy company founded in 2003 by Martin Eberhard and Marc Tarpenning. Elon Musk joined as an investor and chairman in 2004, later becoming CEO in 2008. Tesla is headquartered in Austin, Texas, USA, with major facilities in Fremont, California. The company has approximately 140,000 employees and reported $96.1 billion in revenue for 2023. The company operates in the automotive and energy storage industries.",
+    "expected_data": {
+      "name": "Tesla, Inc.",
+      "industry": "automotive and energy storage",
+      "founded_year": 2003,
+      "headquarters": {
+        "street": null,
+        "city": "Austin",
+        "state": "Texas",
+        "zip_code": null,
+        "country": "USA"
+      },
+      "employees_count": 140000,
+      "ceo": "Elon Musk",
+      "revenue": 96100000000.0,
+      "employees": [
+        {
+          "name": "Elon Musk",
+          "position": "CEO",
+          "department": "Executive",
+          "salary": null,
+          "contact_info": {
+            "email": null,
+            "phone": null,
+            "linkedin": null
+          }
+        }
+      ]
+    }
+  }
+]

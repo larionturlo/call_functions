@@ -32,19 +32,24 @@ pub struct Staistic {
 
 impl Staistic {
     pub fn to_csv_string(&self) -> String {
-        let mut csv_string = format!(
-            "`{}`{CSV_DELIMETR}`{}`{CSV_DELIMETR}`{}`{CSV_DELIMETR}`{}`\n",
-            self.model,
-            self.responces.len(),
-            "",
-            self.average_time
-        );
+        let mut csv_string = String::new();
+        let mut count_success = 0;
 
         for responce in &self.responces {
             csv_string.push_str(&responce.to_csv_string());
+            if responce.case_is_valid {
+                count_success += 1;
+            }
         }
 
-        csv_string
+        format!(
+            "`{}`{CSV_DELIMETR}`{}`{CSV_DELIMETR}`{}`{CSV_DELIMETR}`{}`\n{}",
+            self.model,
+            self.responces.len(),
+            count_success,
+            self.average_time,
+            csv_string,
+        )
     }
 }
 

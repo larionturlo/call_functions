@@ -6,13 +6,17 @@ async fn main() -> Result<(), anyhow::Error> {
     dotenv::dotenv().ok();
     let client = ollama::Client::from_env();
 
-    match call_functions::extract::run(get_models(), client, None).await {
-        Ok(_) => Ok(()),
+    // Run extraction
+    println!("Running person extraction tests...");
+    match call_functions::extract::person::run(get_models(), client.clone(), None).await {
+        Ok(_) => println!("Person extraction tests completed successfully"),
         Err(err) => {
-            eprintln!("Error: {}", err);
-            Err(anyhow::Error::msg("An error occurred"))
+            eprintln!("Error in person extraction: {}", err);
+            return Err(anyhow::Error::msg("An error occurred in person extraction"));
         }
     }
+
+    Ok(())
 }
 
 // fn main() {
@@ -24,10 +28,5 @@ async fn main() -> Result<(), anyhow::Error> {
 // }
 
 fn get_models() -> &'static [&'static str] {
-    &[
-        // "llama3-groq-tool-use:latest",
-        "granite4:3b",
-        "functiongemma:latest",
-        // "nemotron-mini:4b",
-    ]
+    &["granite4:3b", "functiongemma:latest"]
 }
