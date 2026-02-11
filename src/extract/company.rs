@@ -47,6 +47,6 @@ pub async fn run(
     client: ollama::Client,
     report_path: Option<&str>,
 ) -> Result<(), BoxError> {
-    let report_path = report_path.unwrap_or("extract_company_statistics.csv");
+    let report_path = report_path.unwrap_or("data/extract/company_statistics.csv");
     extract::run::<Company>(COMPANY_FILE, models, client, report_path).await
 }

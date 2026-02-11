@@ -7,11 +7,11 @@ async fn main() -> Result<(), anyhow::Error> {
     let client = ollama::Client::from_env();
 
     // Run extraction
-    println!("Running person extraction tests...");
-    match call_functions::extract::person::run(get_models(), client.clone(), None).await {
-        Ok(_) => println!("Person extraction tests completed successfully"),
+    println!("Running company extraction tests...");
+    match call_functions::extract::company::run(get_models(), client.clone(), None).await {
+        Ok(_) => println!("company extraction tests completed successfully"),
         Err(err) => {
-            eprintln!("Error in person extraction: {}", err);
+            eprintln!("Error in company extraction: {}", err);
             return Err(anyhow::Error::msg("An error occurred in person extraction"));
         }
     }
