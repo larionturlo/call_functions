@@ -1,0 +1,11 @@
+`translategemma:latest`|`10`|`3`|`4447`
+`Hello, how are you today?`|`Здравствуйте, как у вас дела сегодня?`|`false`|`6316`
+`The weather is beautiful today.`|`Сегодня прекрасная погода.`|`false`|`2997`
+`I love learning new languages.`|`Я очень люблю изучать новые языки.`|`false`|`4420`
+`Good morning, have a great day!`|`Доброе утро, отличного дня!`|`false`|`5298`
+`Thank you for your help.`|`Спасибо за вашу помощь.`|`true`|`3007`
+`This is a wonderful opportunity.`|`Это прекрасная возможность.`|`false`|`3669`
+`Where is the nearest restaurant?`|`Где находится ближайший ресторан?`|`true`|`3408`
+`I need to book a hotel room.`|`Мне нужно забронировать номер в отеле.`|`false`|`5982`
+`The meeting is scheduled for tomorrow.`|`Встреча назначена на завтра.`|`true`|`4802`
+`Could you please repeat that?`|`Не могли бы вы повторить, пожалуйста?`|`false`|`4577`

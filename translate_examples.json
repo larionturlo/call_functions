@@ -1,0 +1,132 @@
+[
+  {
+    "source": "Hello, how are you today?",
+    "meta": {
+      "source_lang": "English",
+      "source_lang_code": "en",
+      "target_lang": "Russian",
+      "target_lang_code": "ru",
+      "reference": {
+        "source_text": "Hello, how are you?",
+        "target_text": "Привет, как дела?"
+      }
+    }
+  },
+  {
+    "source": "The weather is beautiful today.",
+    "meta": {
+      "source_lang": "English",
+      "source_lang_code": "en",
+      "target_lang": "Russian",
+      "target_lang_code": "ru",
+      "reference": {
+        "source_text": "The weather is nice.",
+        "target_text": "Погода хорошая."
+      }
+    }
+  },
+  {
+    "source": "I love learning new languages.",
+    "meta": {
+      "source_lang": "English",
+      "source_lang_code": "en",
+      "target_lang": "Russian",
+      "target_lang_code": "ru",
+      "reference": {
+        "source_text": "I enjoy studying languages.",
+        "target_text": "Мне нравится изучать языки."
+      }
+    }
+  },
+  {
+    "source": "Good morning, have a great day!",
+    "meta": {
+      "source_lang": "English",
+      "source_lang_code": "en",
+      "target_lang": "Russian",
+      "target_lang_code": "ru",
+      "reference": {
+        "source_text": "Good morning, have a nice day!",
+        "target_text": "Доброе утро, хорошего дня!"
+      }
+    }
+  },
+  {
+    "source": "Thank you for your help.",
+    "meta": {
+      "source_lang": "English",
+      "source_lang_code": "en",
+      "target_lang": "Russian",
+      "target_lang_code": "ru",
+      "reference": {
+        "source_text": "Thanks for your assistance.",
+        "target_text": "Спасибо за вашу помощь."
+      }
+    }
+  },
+  {
+    "source": "This is a wonderful opportunity.",
+    "meta": {
+      "source_lang": "English",
+      "source_lang_code": "en",
+      "target_lang": "Russian",
+      "target_lang_code": "ru",
+      "reference": {
+        "source_text": "This is a great chance.",
+        "target_text": "Это отличная возможность."
+      }
+    }
+  },
+  {
+    "source": "Where is the nearest restaurant?",
+    "meta": {
+      "source_lang": "English",
+      "source_lang_code": "en",
+      "target_lang": "Russian",
+      "target_lang_code": "ru",
+      "reference": {
+        "source_text": "Where is the closest restaurant?",
+        "target_text": "Где находится ближайший ресторан?"
+      }
+    }
+  },
+  {
+    "source": "I need to book a hotel room.",
+    "meta": {
+      "source_lang": "English",
+      "source_lang_code": "en",
+      "target_lang": "Russian",
+      "target_lang_code": "ru",
+      "reference": {
+        "source_text": "I must reserve a hotel room.",
+        "target_text": "Я должен забронировать номер в отеле."
+      }
+    }
+  },
+  {
+    "source": "The meeting is scheduled for tomorrow.",
+    "meta": {
+      "source_lang": "English",
+      "source_lang_code": "en",
+      "target_lang": "Russian",
+      "target_lang_code": "ru",
+      "reference": {
+        "source_text": "The appointment is for tomorrow.",
+        "target_text": "Встреча назначена на завтра."
+      }
+    }
+  },
+  {
+    "source": "Could you please repeat that?",
+    "meta": {
+      "source_lang": "English",
+      "source_lang_code": "en",
+      "target_lang": "Russian",
+      "target_lang_code": "ru",
+      "reference": {
+        "source_text": "Could you repeat that, please?",
+        "target_text": "Повторите, пожалуйста?"
+      }
+    }
+  }
+]
